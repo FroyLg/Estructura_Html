@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+.grid{
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    outline: 4px solid bisque;
+    width: 95%;
+    height: 800px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "n1 n1 n1 n1"
+    "n2 n2 n3 n3"
+    "n4 n4 n4 n4"
+    "n4 n4 n4 n4"
+    "n4 n4 n4 n4"
+    "n4 n4 n4 n4";
+    gap: 5px;
+    background: rgb(255, 220, 156);
+}
+.item{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-align:center;
+
+}
+.item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.item1{
+    background: rgb(70, 40, 40);
+    grid-area: n1;
+}
+.item2{
+    background: rgb(255, 101, 96);
+    grid-area: n2;
+}
+.item3{
+    background: rgb(255, 180, 105);
+    grid-area: n3;
+}
+.item4{
+    background: chocolate;
+    grid-area: n4;
+}

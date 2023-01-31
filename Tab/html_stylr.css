@@ -1,0 +1,63 @@
+.head{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(182, 61, 0);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+.tabs-container{
+    background: rgb(202, 202, 202);
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 99%;
+    height: 400px;
+    margin: 0 ;
+    display: flex;
+    box-shadow: 0 4px 40px -8px 
+    rgb(0, 0, 0, 0.2);
+}
+
+.tabs-container .tabs{
+    width: 15%;
+    background: black ;
+    color: white;
+    text-align: center;
+}
+
+.tabs-container .tabs .tab{
+
+    padding: 24px 32px;
+    background-color: rgb(182, 61, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs-container .tabs .tab.active{
+    background: #f6fdff;
+    color: #222;
+}
+
+.tabs-container .content-container{
+    background: #f6fdff;
+}
+
+.tabs-container .content-container 
+.content{
+    display: none;
+    padding: 32px;
+
+}
+
+.tabs-container .content-container 
+.content.active{
+    display: block;
+}
